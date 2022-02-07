@@ -65,7 +65,7 @@ module RailsUpgrader
 
     def preload_environment
       begin
-        require "#{Dir.pwd}/config/environment"
+        require "#{Dir.pwd}/config/environments"
       rescue LoadError => e
         puts "Rails application not found! If you're on "\
              "a Rails application, please open a Github issue: "\
