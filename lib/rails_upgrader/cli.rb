@@ -69,7 +69,7 @@ module RailsUpgrader
       rescue LoadError => e
         puts "Rails application not found! If you're on "\
              "a Rails application, please open a Github issue: "\
-             "https://github.com/ombulabs/rails_upgrader/issues Error: " + e
+             "https://github.com/ombulabs/rails_upgrader/issues Error: #{e}"
         abort
       end
 
